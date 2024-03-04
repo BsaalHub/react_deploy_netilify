@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.app {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 450px;
+    border: 1px solid mediumblue;
+    margin: auto;
+}
+
+header {
+
+    width: 100%;
+    background-color: mediumblue;
+    color: whitesmoke;
+    display: flex;
+    padding: 3px 0.5em;
+}
+
+main {
+
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+}
+
+footer {
+
+    width: 100%;
+    background-color: mediumblue;
+    color: whitesmoke;
+    padding: 2px 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    padding: 0 0.25em 0.25em;
+    
+}
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    margin: 0.3rem 0;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.item input[type="checkbox"] {
+    
+   text-align: center; 
+   width: 40px; 
+   min-width: 40px;
+   height: 40px;
+   min-height: 40px;
+   cursor: pointer;
+   margin-right: 0.25rem;
+}
+
+.item input[type="checkbox"]:focus + label {
+    text-decoration: underline;
+}
+
+.item label {
+
+    font-size: 1.5rem;
+    flex-grow: 1;
+}
+
+.item svg {
+
+    width: 40px;
+    min-width: 40px;
+    height: 30px;
+    min-height: 30px;
+    color: steelblue;
+    cursor: pointer;
+}
+
+.item svg:hover,
+ .item svg:focus {
+
+    color: tomato;
+    outline: none;
+}
+
+.addForm {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5rem 0 0;
+    padding: 0 0.5rem 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.addForm label {
+    position: absolute;
+    left: -99999px;  /* label will not be shown but will be there to be read by technolgy. */
+}
+
+.addForm input[type="text"] {
+
+    flex-grow: 1;
+    max-width: calc(100% - 50px);
+    min-height: 48px;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-right: 0.25rem;
+    outline: none;
+}
+
+.addForm button {
+    font-size: 1rem;
+    font-weight: bold;
+    min-width: 48px;
+    height: 48px;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    background-color: aliceblue;
+    color: mediumblue;
+    cursor: pointer;
+}
+
+.addForm button:hover,
+.addForm button:focus {
+
+    background-color: limegreen;
+    color: white;
+    outline: none;
+}
+
+.searchForm {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.25rem 0 0;
+    padding: 0 0.5rem 0.25rem;
+    border-bottom: 1px solid #eee;
+}
+
+.searchForm label {
+    position: absolute;
+    left: -99999px;
+}
+
+.searchForm input[type="text"]{
+
+    flex-grow: 1;
+    font-size: 1.1rem;
+    max-width: 100%;
+    min-height: 40px;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    outline: none;
+}
